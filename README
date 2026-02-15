@@ -1,0 +1,3 @@
+Ansible Practice (roadmap.sh project)
+
+https://roadmap.sh/projects/configuration-management

@@ -1,0 +1,6 @@
+---
+- name: Add SSH public key for user
+  authorized_key:
+    user: mhdi
+    state: present
+    key: "{{ lookup('file', '/home/mhdi/.ssh/id_rsa.pub') }}"

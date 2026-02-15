@@ -1,0 +1,21 @@
+---
+- name: Update Server
+  apt:
+    update_cache: yes
+
+- name: Upgrade Server
+  apt:
+    upgrade: dist
+
+- name: Install fail2ban
+  apt:
+    name: fail2ban
+    state: present
+
+- name: Install unzip and tar
+  apt:
+    name: 
+    - tar
+    - gzip
+    - unzip
+    state: present
